@@ -1,6 +1,14 @@
 Aliyun push sdk for node.js, include DirectMail and SMS.
 
+[![npm version](http://img.shields.io/npm/v/ali-push.svg)](https://www.npmjs.com/package/ali-push)
+[![npm download](http://img.shields.io/npm/dm/ali-push.svg)](https://www.npmjs.com/package/ali-push)
 [![Build Status](https://travis-ci.org/ShanChain/aliyun-push.svg?branch=master)](https://travis-ci.org/ShanChain/aliyun-push)
+
+# Install
+
+  ```
+  $ npm install ali-push -S
+  ```
 
 # Usage
 

@@ -1,6 +1,6 @@
 {
   "name": "ali-push",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Aliyun push sdk for node.js, include DirectMail and SMS.",
   "main": "client.js",
   "scripts": {
@@ -18,6 +18,13 @@
   },
   "author": "jovey-zheng",
   "license": "MIT",
+  "keywords": [
+    "push",
+    "client",
+    "DirectMail",
+    "SMS",
+    "aliyun"
+  ],
   "dependencies": {
     "lodash": "^4.16.4",
     "md5": "^2.2.1",
