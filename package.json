@@ -1,0 +1,36 @@
+{
+  "name": "ali-push",
+  "version": "0.0.1",
+  "description": "Aliyun push sdk for node.js, include DirectMail and SMS.",
+  "main": "client.js",
+  "scripts": {
+    "test": "_mocha",
+    "start": "node .",
+    "test:reports": "_mocha --reporter mochawesome",
+    "test:coverage": "istanbul cover _mocha -- -R spec",
+    "test:coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
+    "clean:reports": "rimraf mochawesome-reports",
+    "clean:coverage": "rimraf coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ShanChain/aliyun-push.git"
+  },
+  "author": "jovey-zheng",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "md5": "^2.2.1",
+    "moment": "^2.15.1",
+    "querystring": "^0.2.0",
+    "request": "^2.75.0",
+    "urlencode": "^1.1.0"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.14",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.1.2",
+    "mochawesome": "^1.5.3",
+    "rimraf": "^2.5.4"
+  }
+}
