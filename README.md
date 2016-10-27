@@ -13,7 +13,7 @@ Aliyun push sdk for node.js, include DirectMail and SMS.
 # Usage
 
   ```js
-  var push = require('aliyun-push');
+  var push = require('ali-push');
 
   var client = new push({
     AccessKeyId: '<Your AccessKeyId>',
