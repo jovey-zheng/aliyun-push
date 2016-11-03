@@ -56,16 +56,16 @@ push.SingleSendMail = function(args, cb) {
   args = args || {};
 
   if (_.isEmpty(args.ToAddress)) {
-    return 'Error: param ToAddress is required';
+    return cb('Error: param ToAddress is required');
   }
   if (!util.isEmail(args.ToAddress)) {
-    return 'Error: param ToAddress format is not correct';
+    return cb('Error: param ToAddress format is not correct');
   }
   if (_.isEmpty(args.Subject)) {
-    return 'Error: param Subject is required';
+    return cb('Error: param Subject is required');
   }
   if (_.isEmpty(args.HtmlBody) && _.isEmpty(args.TextBody)) {
-    return 'Error: The specified TextBody or HtmlBody is wrongly formed';
+    return cb('Error: The specified TextBody or HtmlBody is wrongly formed');
   }
 
   this.singleOptions['ToAddress'] = args.ToAddress;
@@ -92,10 +92,10 @@ push.BatchSendMail = function(args, cb) {
   args = args || {};
 
   if (_.isEmpty(args.TemplateName)) {
-    return 'Error: param TemplateName is required';
+    return cb('Error: param TemplateName is required');
   }
   if (_.isEmpty(args.ReceiversName)) {
-    return 'Error: param ReceiversName is required';
+    return cb('Error: param ReceiversName is required');
   }
 
   this.batchOptions['TemplateName'] = args.TemplateName;
@@ -120,19 +120,19 @@ push.SingleSendSms = function(args, cb) {
   args = args || {};
 
   if (_.isEmpty(args.SignName)) {
-    return 'Error: param SignName is required';
+    return cb('Error: param SignName is required');
   }
   if (_.isEmpty(args.TemplateCode)) {
-    return 'Error: param TemplateCode is required';
+    return cb('Error: param TemplateCode is required');
   }
   if (_.isEmpty(args.RecNum)) {
-    return 'Error: param RecNum is required';
+    return cb('Error: param RecNum is required');
   }
   if (!util.isPhone(args.RecNum)) {
-    return 'Error: param RecNum format is not correct';
+    return cb('Error: param RecNum format is not correct');
   }
   if (_.isEmpty(args.ParamString)) {
-    return 'Error: param ParamString is required';
+    return cb('Error: param ParamString is required');
   }
 
   this.smsOptions['SignName'] = args.SignName;
