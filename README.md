@@ -25,7 +25,7 @@ Aliyun push sdk for node.js, include DirectMail and SMS.
     ToAddress: 'test@shanchain.com',
     Subject: 'test',
     TextBody: 'hello world'
-  }, funtion(err, res, body) {
+  }, function(err, res, body) {
     // do something here
     // console.log(err, res, body)
   });

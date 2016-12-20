@@ -1,12 +1,12 @@
 {
   "name": "ali-push",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "Aliyun push sdk for node.js, include DirectMail and SMS.",
   "main": "client.js",
   "scripts": {
-    "test": "_mocha -t 600000",
+    "test": "_mocha -t 20000",
     "start": "node .",
-    "test:reports": "_mocha -t 600000 -R mochawesome",
+    "test:reports": "_mocha -t 20000 -R mochawesome",
     "test:coverage": "istanbul cover _mocha -- -R spec",
     "test:coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "clean:reports": "rimraf mochawesome-reports",
