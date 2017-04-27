@@ -1,6 +1,6 @@
 {
   "name": "ali-push",
-  "version": "0.1.8",
+  "version": "0.1.10",
   "description": "Aliyun push sdk for node.js, include DirectMail and SMS.",
   "main": "client.js",
   "scripts": {
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShanChain/aliyun-push.git"
+    "url": "https://github.com/jovey-zheng/aliyun-push.git"
   },
   "author": "jovey-zheng",
   "license": "MIT",
